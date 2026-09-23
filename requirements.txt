@@ -3,3 +3,4 @@ python-dotenv
 langchain-community
 langchain_huggingface
 streamlit
+dotenv
