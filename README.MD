@@ -20,6 +20,10 @@ A simple AI chatbot built using **Qwen3-8B**, an 8-billion-parameter language mo
 - Streamlit
 - LangSmith
 
+## Live App:
+
+https://simple-chatbot-with-qwen3-8b-7whjxohshnx2jmbseq3spq.streamlit.app/
+
 ## 🚀 Setup
 
 ### 1. Clone the repository
