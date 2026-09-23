@@ -17,6 +17,7 @@ os.environ["USER_AGENT"] = "Mozilla/5.0"
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser 
+from langchain_core.tracers import LangChainTracer
 import streamlit as st
 
 
@@ -90,9 +91,17 @@ if question:
     })
 
     # Run existing LangChain chain
-    response = chain.invoke({
-        "question": question
-    })
+    tracer = LangChainTracer(
+    project_name="GenAiAppWithOpenai"
+)
+
+    response = chain.invoke(
+    {"question": question},
+    config={
+        "callbacks": [tracer]
+    }
+)
+    
 
     # Show assistant response
     with st.chat_message("assistant"):
@@ -103,3 +112,5 @@ if question:
         "role": "assistant",
         "content": response
     })
+
+
