@@ -54,7 +54,7 @@ chain = prompt | llm | parser
 
 
 # Streamlit Title
-st.title("Say Hi to Jarvis")
+st.title("Say Hi to Sunday")
 
 # Chat History
 if "messages" not in st.session_state:
