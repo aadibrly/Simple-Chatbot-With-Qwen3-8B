@@ -24,8 +24,8 @@ import streamlit as st
 
 llm = HuggingFaceEndpoint(
     repo_id="Qwen/Qwen3-8B",
-    max_new_tokens=1024,
-    temperature=0.7,
+    max_new_tokens=1600,
+    temperature=0.3,
     
 )
 
@@ -77,9 +77,9 @@ if question:
         "content": question
     })
 
-    # Run existing LangChain chain
+    # Runs existing LangChain chain
     tracer = LangChainTracer(
-    project_name="GenAiAppWithOpenai"
+    project_name= os.getenv("LANGCHAIN_PROJECT")
 )
 
     response = chain.invoke(
