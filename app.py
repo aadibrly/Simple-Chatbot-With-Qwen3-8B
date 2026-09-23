@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
+
 os.environ['HF_TOKEN'] = os.getenv("HUGGINGFACE_API_KEY")
 
 #langsmith tracking 
@@ -42,7 +44,7 @@ parser = StrOutputParser()
 
 
 
-chain = prompt|llm|parser
+
 
 parser = StrOutputParser()
 
