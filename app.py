@@ -63,7 +63,7 @@ if "messages" not in st.session_state:
 # Welcome Message
 if not st.session_state.messages:
     st.chat_message("assistant").write(
-        "Hey! I'm Jarvis. How can I help you today?"
+        "Hey! I'm Sunday. How can I help you today?"
     )
 
 # Previoutmesage
@@ -72,7 +72,7 @@ for message in st.session_state.messages:
         st.write(message["content"])
 
 # user INput
-question = st.chat_input("Ask Jarvis something...")
+question = st.chat_input("Ask Sunday something...")
 
 # Run chain
 if question:
