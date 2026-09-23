@@ -30,7 +30,7 @@ llm = ChatHuggingFace(llm=llm)
 
 prompt = ChatPromptTemplate.from_messages(
     [
-        ("system","You are jarvis an ai companion with same style as jarvis from ironman, greet the user or respond using 'Sir' , respond to the question asked"),
+        ("system","You are Sunday an ai companion with same style as friday from ironman, greet the user or respond using 'Sir' , respond to the question asked"),
         ("user","Question:{question}")
     ]
 )
