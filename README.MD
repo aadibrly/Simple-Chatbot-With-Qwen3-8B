@@ -25,5 +25,5 @@ A simple AI chatbot built using **Qwen3-8B**, an 8-billion-parameter language mo
 ### 1. Clone the repository
 
 ```bash
-git clone <NA>
-cd <NA>
+git clone https://github.com/aadibrly/Simple-Chatbot-With-Qwen3-8B.git
+cd Simple-Chatbot-With-Qwen3-8B
