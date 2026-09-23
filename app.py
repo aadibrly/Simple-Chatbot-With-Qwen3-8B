@@ -40,21 +40,8 @@ prompt = ChatPromptTemplate.from_messages(
 
 parser = StrOutputParser()
 
-
-#streamlit setup 
-
-
-
-
-
-parser = StrOutputParser()
-
-
-
 # Create chain
 chain = prompt | llm | parser
-
-
 
 # Streamlit Title
 st.title("Say Hi to Sunday")
